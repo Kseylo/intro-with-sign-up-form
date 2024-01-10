@@ -1,3 +1,4 @@
+// @ts-ignore
 import errorIcon from './assets/images/icon-error.svg'
 class CustomInput extends HTMLInputElement {
     private errorMsg!: HTMLSpanElement
