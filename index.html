@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/style.css" />
+        <script type="module" src="/src/main.ts"></script>
+        <title>Intro With Sign Up Form</title>
+    </head>
+    <body
+        class="bg-primary-red flex h-dvh flex-col items-center md:justify-center"
+    >
+        <main
+            class="flex max-w-lg flex-col gap-8 px-6 py-16 lg:max-w-screen-xl lg:flex-row"
+        >
+            <article
+                class="flex-1 space-y-6 self-center text-center lg:text-start"
+            >
+                <h1 class="text-3xl font-bold text-neutral-50 md:text-5xl">
+                    Learn to code by watching others
+                </h1>
+                <p class="text-lg text-neutral-200">
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </article>
+            <div class="flex flex-1 flex-col gap-8">
+                <div
+                    class="bg-accent-blue rounded-lg px-12 py-6 text-center text-lg text-neutral-300 shadow lg:py-4"
+                >
+                    <span class="font-semibold text-neutral-50"
+                        >Try it free 7 days
+                    </span>
+                    then $20/mo. thereafter
+                </div>
+                <form
+                    class="flex flex-col gap-6 rounded-lg bg-neutral-50 p-8 shadow"
+                    novalidate
+                >
+                    <label class="relative">
+                        <input is="custom-input" placeholder="First Name" type="text" id="firstName" required></input>
+                    </label>
+<!--                    here for example-->
+                    <label class="relative">
+                        <input is="custom-input" placeholder="Last Name" type="text" id="lastName" required></input>
+                    </label>
+                    <label class="relative">
+                        <input is="custom-input" placeholder="Email Address" type="email" id="emailAddress" required></input>
+                    </label>
+                    <label class="relative">
+                        <input is="custom-input" placeholder="Password" type="password" id="password" required></input>
+                    </label>
+                    <button
+                        class="bg-primary-green shadow-btn rounded-lg py-5 text-lg font-medium uppercase tracking-wider text-neutral-100 transition hover:translate-y-0.5 hover:bg-opacity-80 lg:py-4"
+                    >
+                        Claim your free trial
+                    </button>
+                    <footer
+                        class="text-center text-sm leading-7 text-neutral-400 lg:text-xs"
+                    >
+                        By clicking the button, you are agreeing to our
+                        <span class="text-primary-red font-semibold"
+                            >Terms and Services</span
+                        >
+                    </footer>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
