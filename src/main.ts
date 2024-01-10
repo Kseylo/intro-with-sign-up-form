@@ -1,3 +1,4 @@
+import errorIcon from './assets/images/icon-error.svg'
 class CustomInput extends HTMLInputElement {
     private errorMsg!: HTMLSpanElement
     private errorIcon!: HTMLImageElement
@@ -20,7 +21,7 @@ class CustomInput extends HTMLInputElement {
     setupErrorIcon() {
         this.errorIcon = document.createElement('img')
         this.errorIcon.classList.add('absolute', 'top-4', 'right-8')
-        this.errorIcon.setAttribute('src', 'src/assets/images/icon-error.svg')
+        this.errorIcon.setAttribute('src', errorIcon)
         this.errorIcon.setAttribute('alt', 'error icon')
         this.after(this.errorIcon)
     }
